@@ -26,12 +26,14 @@ public class PlayerController : MonoBehaviour {
 
         m_hue += 0.001f;
         if (m_hue > 1.0f) m_hue = 0.0f;
+        m_environmentMat.SetVector("_CameraPosition", m_camera.gameObject.transform.position);
         m_environmentMat.SetColor("_Color", Color.HSVToRGB(m_hue, 1, 1));
         m_environmentMat.SetColor("_OutlineColor", Color.HSVToRGB(m_hue, 1.0f, 0.5f));
         m_camera.backgroundColor = Color.HSVToRGB(m_hue, 1, 0.1f);
         //RenderSettings.ambientGroundColor = Color.HSVToRGB(m_hue, 1, 1.0f);
         //RenderSettings.ambientEquatorColor = Color.HSVToRGB(m_hue, 1, 0.5f);
         RenderSettings.ambientSkyColor = Color.HSVToRGB(m_hue, 0.5f, 0.5f);
+
     }
 
     void Update() {
