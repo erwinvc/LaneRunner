@@ -10,3 +10,4 @@ public class BuildScript {
         BuildPipeline.BuildPlayer(defaultScene, "./Build/game.exe", BuildTarget.StandaloneWindows64, BuildOptions.AllowDebugging);
     }
 }
+
