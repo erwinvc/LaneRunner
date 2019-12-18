@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using NUnit.Framework;
 using UnityEditor;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.TestTools;
 
 namespace Tests {
