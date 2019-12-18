@@ -19,8 +19,7 @@ namespace Tests {
             }
         }
 
-        private List<KeyTimePair> combos = new List<KeyTimePair>()
-        {
+        private List<KeyTimePair> combos = new List<KeyTimePair>() {
             new KeyTimePair(KeyCode.A, 1.06f),
             new KeyTimePair(KeyCode.D, 0.55f),
             new KeyTimePair(KeyCode.D, 0.89f),

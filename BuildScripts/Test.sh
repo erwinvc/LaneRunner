@@ -1,2 +1,4 @@
 echo Starting tests
-'D:/Program Files/Unity installs/2019.2.5f1/Editor/Unity.exe' -runTests -batchmode -projectPath '../LaneRunner/' -logfile '$WORKSPACE/Tests/log.xml' -testResults '$WORKSPACE/Tests/results.xml' -testPlatform playmode
+"D:/Program Files/Unity installs/2019.2.5f1/Editor/Unity.exe" -quit -nographics -batchmode -projectPath "D:/Program Files/Jenkins/workspace/LaneRunner/" -executeMethod UnityBuild.BuildPlatforms -buildPath "D:/Program Files/Jenkins/workspace/LaneRunner/" -windows64
+
+"D:\Program Files\Unity\Editor\2019.2.15f1\Editor\Unity.exe" -projectPath "D:/Program Files/Jenkins/workspace/LaneRunner/" -runTests -logFile "D:/Program Files/Jenkins/workspace/LaneRunner/Tests/unitytests-results.log" -testResults "D:/Program Files/Jenkins/workspace/LaneRunner/Tests/results.xml" -testPlatform playmode -batchmode -nographics
